@@ -1,0 +1,8 @@
+﻿@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+<RemoteAuthenticatorView Action="@Action" />
+
+@code{
+    [Parameter, EditorRequired] public required string Action { get; set; }
+}
